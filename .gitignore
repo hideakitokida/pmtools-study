@@ -1,0 +1,40 @@
+# 再生成できるもの・手元だけの作業・ゴミだけ Git に入れない（PJ のデータは載せる）
+_pull/
+_out/
+backup_*/
+__pycache__/
+*.tmp
+
+# A. 個人の作業記録
+.pmctl/sessions/
+.pmctl/daemon/
+**/tool_call_log.jsonl
+**/llm_token_log.jsonl
+
+# B. 認証・個人環境の設定
+.env
+.env.*
+*.pem
+*.key
+credentials*.json
+token*.json
+.mcp.json
+**/.claude/settings.local.json
+*.code-workspace
+
+# C. 個人のメール
+_raw/gmail_threads.json
+
+# D. 重複バックアップ・衝突時の退避
+*.bak
+*.bak.*
+*.bak[0-9]*.json
+*_backup.md
+_raw/*_bak_conflicts/
+_raw/chat/test.json
+
+# E. 下書き（共有したいものは reports/ などへ移す）
+drafts/
+
+# F. 大きなバイナリ
+*.zip
