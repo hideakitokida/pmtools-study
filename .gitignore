@@ -32,6 +32,7 @@ _raw/gmail_threads.json
 *_backup.md
 _raw/*_bak_conflicts/
 _raw/chat/test.json
+.pmctl-edit/
 
 # E. 下書き（共有したいものは reports/ などへ移す）
 drafts/
